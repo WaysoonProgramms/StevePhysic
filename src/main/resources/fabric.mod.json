@@ -2,25 +2,28 @@
   "schemaVersion": 1,
   "id": "stevephysic",
   "version": "${version}",
-
   "name": "StevePhysic",
-  "description": "",
-  "authors": [],
-  "contact": {},
-
+  "description": "Realistic Minecraft character physics. You may slip on ice or trip on dirt, sand, gravel, boards, or similar blocks.",
+  "authors": [
+    "Waysoon_"
+  ],
+  "contact": {
+    "repo": "https://github.com/WaysoonProgramms/StevePhysic"
+  },
   "license": "MIT",
   "icon": "assets/stevephysic/icon.png",
-
-  "environment": "client",
-  "entrypoints": {},
-
-      "mixins": [
-        "stevephysic.mixins.json"
-      ],
-
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.waysoonprogramms.stevephysic.StevePhysic"
+    ]
+  },
+  "mixins": [
+    "stevephysic.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
